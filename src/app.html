@@ -1,12 +1,50 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+
+<head>
+	<title>Diego Rascón</title>
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link rel="canonical" href="https://drascon.com/" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="Diego Rascón">
+	<meta name="description"
+		content="Personal landing page for Diego Rascón, a software developer based in México with a bachelor's degree in Computer Systems Engineering, specializing in modern web development and polished, user-centric front-end design.">
+	<meta name="keywords"
+		content="José Diego Rascón Amador, Diego Rascón, software developer, web developer, portfolio, LinkedIn, GitHub, personal website">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Diego Rascón" />
+	<meta property="og:description" content="Diego Rascón, software developer based in México." />
+	<meta property="og:url" content="https://drascon.com/" />
+	<!-- <meta property="og:image" content="https://drascon.com/" /> -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "José Diego Rascón Amador",
+			"alternateName": "Diego Rascón",
+			"url": "https://drascon.com/",
+			<!-- "image": "https://drascon.com/profile.jpg", -->
+			"jobTitle": "Software Developer",
+			"worksFor": {
+			  "@type": "Organization",
+			  "name": "Zitheonsoft"
+			},
+			"alumniOf": {
+			  "@type": "CollegeOrUniversity",
+			  "name": "Instituto Tecnológico Superior de Cajeme"
+			},
+			"sameAs": [
+			  "https://github.com/diego-rascon",
+			  "https://www.linkedin.com/in/diegorascon"
+			]
+		}
+	 </script>
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
