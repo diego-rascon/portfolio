@@ -1,3 +1,7 @@
+<script lang="ts">
+  import ContactLink from "../components/ContactLink.svelte";
+</script>
+
 <span id="credits">
   Hey there! If you're wondering, I built this site using SvelteKit with
   standard CSS. It might be a bit overkill for a portfolio/landing page, this
@@ -14,13 +18,13 @@
   </header>
   <main>
     <div id="links-container">
-      <a target="_blank" href="mailto:contact@drascon.com"
-        >contact@drascon.com</a
-      >
-      <a target="_blank" href="https://github.com/diego-rascon">GitHub</a>
-      <a target="_blank" href="https://www.linkedin.com/in/diegorascon/"
-        >LinkedIn</a
-      >
+      <ContactLink href="mailto:contact@drascon.com">
+        contact@drascon.com
+      </ContactLink>
+      <ContactLink href="https://github.com/diego-rascon">GitHub</ContactLink>
+      <ContactLink href="https://www.linkedin.com/in/diegorascon/">
+        LinkedIn
+      </ContactLink>
     </div>
   </main>
 </div>
@@ -31,6 +35,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #01295f;
   }
 
   #credits {
@@ -41,13 +46,10 @@
     height: 100vh;
     width: 100vw;
     place-content: center center;
-    background-color: aliceblue;
     text-align: center;
-  }
-
-  h1,
-  p {
-    color: darkslategray;
+    padding: 2rem;
+    background-color: #f4eded;
+    /* F9DB6D */
   }
 
   #title {
@@ -56,8 +58,15 @@
 
   #links-container {
     display: flex;
+    max-width: 800px;
     justify-content: center;
-    margin-top: 1rem;
-    gap: 2rem;
+    margin: 2rem auto 0 auto;
+    gap: 1rem;
+  }
+
+  @media (max-width: 780px) {
+    #links-container {
+      flex-direction: column;
+    }
   }
 </style>
