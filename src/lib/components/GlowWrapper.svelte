@@ -17,7 +17,7 @@
 		transparent 80%)"
 	></div>
 
-	<div class="relative z-10">
+	<div class="relative z-10 container mx-auto flex h-screen flex-col">
 		{@render children()}
 	</div>
 </div>

@@ -4,10 +4,8 @@
 </script>
 
 <!-- <NavBar /> -->
-<div class="container mx-auto">
-	<Hero />
-	<main>
-		<!-- <Experience /> -->
-	</main>
-	<Footer />
-</div>
+<Hero />
+<main class="">
+	<!-- <Experience /> -->
+</main>
+<Footer />
