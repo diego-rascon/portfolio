@@ -5,15 +5,15 @@
 
 	const contactButtons: ContactButtonProps[] = [
 		{
-			icon: 'lucide--mail',
+			icon: 'lucide:mail',
 			href: 'mailto:contact@drascon.com'
 		},
 		{
-			icon: 'streamline-logos--linkedin-logo-block',
+			icon: 'streamline-logos:linkedin-logo-block',
 			href: 'https://www.linkedin.com/in/diegorascon'
 		},
 		{
-			icon: 'streamline-logos--github-logo-2-solid',
+			icon: 'streamline-logos:github-logo-2-solid',
 			href: 'https://github.com/diego-rascon'
 		}
 	];
