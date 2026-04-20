@@ -2,3 +2,25 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@plugin '@iconify/tailwind4';
+
+@layer utilities {
+	.bg-grid-pattern {
+		--grid-line-color: #131c2d;
+		--grid-line-width: 1px;
+		--grid-cell-size: 96px;
+
+		background-image:
+			linear-gradient(
+				to right,
+				var(--grid-line-color) var(--grid-line-width),
+				transparent var(--grid-line-width)
+			),
+			linear-gradient(
+				to bottom,
+				var(--grid-line-color) var(--grid-line-width),
+				transparent var(--grid-line-width)
+			);
+		background-size: var(--grid-cell-size) var(--grid-cell-size);
+	}
+}
