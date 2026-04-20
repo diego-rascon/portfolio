@@ -8,3 +8,5 @@
 <script lang="ts">
 	let { label, color }: SkillTagProps = $props();
 </script>
+
+<span class={color}>{label}</span>
