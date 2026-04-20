@@ -8,6 +8,16 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Diego Rascón</title>
+	<meta
+		name="description"
+		content="Full-Stack Engineer focused on modern web and mobile development. I bridge the gap between elegant client-side experiences and high-performance server architectures."
+	/>
+	<meta
+		name="keywords"
+		content="Diego Rascón, Diego, Rascón, Engineer, Developer, Fullstack, Backend, Frontend, HTML, CSS, JavaScript, TypeScript, Java, React, Elixir, Spring, SQL, Docker, AWS, Svelte"
+	/>
+	<meta name="author" content="Diego Rascón" />
 </svelte:head>
 
 <GlowWrapper>
