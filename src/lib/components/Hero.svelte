@@ -7,8 +7,8 @@
 	class="mx-4 my-24 flex max-w-4xl flex-col-reverse items-center justify-center gap-8 md:mx-auto md:my-0 md:flex-row md:gap-18"
 >
 	<div>
-		<h1 class="mb-8 text-4xl font-bold text-gray-300 md:text-5xl">Diego Rascón</h1>
-		<p class="mb-6 font-light text-gray-400 md:text-lg">
+		<h1 class="mb-8 text-4xl font-bold text-gray-200 md:text-5xl">Diego Rascón</h1>
+		<p class="mb-6 font-light text-gray-300 md:text-lg">
 			Full-Stack Engineer focused on modern web and mobile development. I bridge the gap between
 			elegant client-side experiences and high-performance server architectures.
 		</p>
@@ -16,7 +16,7 @@
 			rel="external"
 			href="/resume.pdf"
 			download="diego_rascon_resume.pdf"
-			class="flex items-center justify-center gap-2 justify-self-start rounded-lg border px-4 py-2 text-gray-300 transition-colors duration-300 hover:text-sky-300"
+			class="flex items-center justify-center gap-2 justify-self-start rounded-lg border px-4 py-2 text-gray-200 transition-colors duration-300 hover:text-sky-300"
 		>
 			<Icon icon="lucide:download" width="20" height="20" />
 			<span>Resume</span>

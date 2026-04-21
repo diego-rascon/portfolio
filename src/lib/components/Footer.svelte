@@ -19,7 +19,7 @@
 	];
 </script>
 
-<footer class="mx-4 my-12 mt-auto flex items-end justify-between gap-12 text-gray-500">
+<footer class="mx-4 my-12 mt-auto flex items-end justify-between gap-12 text-gray-400">
 	<p class="text-sm font-light">
 		Coded on <FooterLink href="https://zed.dev/">Zed</FooterLink>. Built with
 		<FooterLink href="https://svelte.dev/">SvelteKit</FooterLink>
