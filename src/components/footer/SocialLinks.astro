@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface SocialLink {
+  icon: string;
+  url: string;
+}
+
+const socialLinks: SocialLink[] = [
+  {
+    icon: "mail",
+    url: "mailto:contact@drascon.com",
+  },
+  {
+    icon: "linkedin",
+    url: "https://www.linkedin.com/in/diegorascon",
+  },
+  {
+    icon: "github",
+    url: "https://github.com/diego-rascon",
+  },
+] as const;
+---
+
+<div class="flex justify-end gap-6">
+  {
+    socialLinks.map(({ url, icon }) => (
+      <a
+        class="rounded-md text-slate-400 hover:text-sky-300 transition-colors focusable-item"
+        href={url}
+        target="_blank"
+      >
+        <Icon name={icon} class="size-6" />
+      </a>
+    ))
+  }
+</div>

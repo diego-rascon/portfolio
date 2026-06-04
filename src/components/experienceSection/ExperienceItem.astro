@@ -1,0 +1,54 @@
+---
+import { formatDateRange } from "../../lib/utils";
+import type { Experience } from "../../types/Experience";
+import GlassContainer from "../GlassContainer.astro";
+import StyledLink from "../StyledLink.astro";
+import SkillsUsedList from "./SkillsUsedList.astro";
+
+interface Props {
+  experienceItem: Experience;
+}
+
+const {
+  experienceItem: {
+    company,
+    companyUrl,
+    title,
+    startDate,
+    endDate,
+    description,
+    skillsUsed,
+  },
+} = Astro.props;
+
+const formattedDateRange = formatDateRange(startDate, endDate);
+---
+
+<li class="group flex md:pl-7">
+  <div class="hidden relative md:flex flex-1 items-start pt-4">
+    <div
+      class="group-last:hidden top-6 left-[0.44rem] absolute bg-slate-700 w-0.5 h-full"
+    >
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="bg-slate-700 rounded-full size-4"></div>
+      <span class="font-light text-slate-400">
+        {formattedDateRange}
+      </span>
+    </div>
+  </div>
+  <div class="flex-2 mb-2 group-last:mb-0">
+    <GlassContainer>
+      <div class="flex items-center gap-3 md:pb-2 text-slate-200">
+        <span>{title}</span>
+        <span class="text-slate-700">•</span>
+        <StyledLink url={companyUrl}>{company}</StyledLink>
+      </div>
+      <span class="md:hidden block mb-4 font-light text-slate-400 text-sm">
+        {formattedDateRange}
+      </span>
+      <p class="mb-2 font-light text-slate-400">{description}</p>
+      <SkillsUsedList skills={skillsUsed} />
+    </GlassContainer>
+  </div>
+</li>

@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+---
+
+<a
+  class="group/link flex justify-between md:justify-start items-center gap-3 rounded-full text-slate-200 hover:text-sky-300 transition-colors focusable-item"
+  href={url}
+  target="_blank"
+>
+  <slot />
+  <Icon
+    name="square-arrow-out-up-right"
+    class="min-w-4 min-h-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+  />
+</a>

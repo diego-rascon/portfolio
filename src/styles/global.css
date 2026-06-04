@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+
+html {
+  container-type: scroll-state;
+  container-name: page;
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    --grid-line-color: #131c2d;
+    --grid-line-width: 1px;
+    --grid-cell-size: 96px;
+
+    background-image:
+      linear-gradient(
+        to right,
+        var(--grid-line-color) var(--grid-line-width),
+        transparent var(--grid-line-width)
+      ),
+      linear-gradient(
+        to bottom,
+        var(--grid-line-color) var(--grid-line-width),
+        transparent var(--grid-line-width)
+      );
+    background-size: var(--grid-cell-size) var(--grid-cell-size);
+  }
+}
+
+.focusable-item {
+  @apply focus-visible:outline-sky-300 focus-visible:outline-2 focus-visible:outline-offset-4;
+}
