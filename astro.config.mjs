@@ -13,6 +13,12 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   integrations: [icon(), svelte()],
 
+  image: {
+    service: {
+      entrypoint: "astro/assets/services/noop"
+    }
+  },
+
   vite: {
     plugins: [tailwindcss()]
   },
