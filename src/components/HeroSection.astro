@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-import ProfilePicture from "../images/profile-picture.jpg";
 import { Icon } from "astro-icon/components";
 import Section from "./Section.astro";
 ---
@@ -27,8 +25,8 @@ import Section from "./Section.astro";
         <span>Resume</span>
       </a>
     </div>
-    <Image
-      src={ProfilePicture}
+    <img
+      src="/images/profile-picture.jpg"
       alt="Diego Rascón"
       class="self-center shadow-xl border-slate-400 border-t rounded-2xl size-48 md:size-72 object-cover"
     />
