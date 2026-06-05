@@ -22,41 +22,38 @@ const navItems: NavItem[] = [
 ];
 ---
 
-<header class="z-10 fixed px-4 w-full">
+<header class="z-10 fixed px-4 w-full" role="banner">
   <nav
     class="flex bg-slate-800/0 mx-auto my-8 md:my-12 px-6 py-4 border-slate-700/0 border-t rounded-full max-w-4xl font-semibold text-slate-400 transition-all duration-300 navbar container"
+    role="navigation"
   >
-    <ol class="flex justify-between w-full *:*:hover:text-sky-300">
-      <li>
-        <a
-          class="hidden invisible md:block opacity-0 rounded-full focusable-item navbar-edge"
-          href="#home">Diego Rascón</a
-        >
-      </li>
-      <div
+    <div class="flex justify-center md:justify-between w-full">
+      <a
+        class="hidden invisible md:block opacity-0 rounded-full hover:text-sky-300 focusable-item navbar-edge"
+        href="#home">Diego Rascón</a
+      >
+      <ol
         class="flex gap-8 md:gap-16 text-sm md:text-base transition-all duration-300 navbar-link navbar-sections"
       >
         {
           navItems.map(({ id, label }) => (
             <li>
-              <a class="focusable-item" href={`#${id}`}>
+              <a class="hover:text-sky-300 focusable-item" href={`#${id}`}>
                 {label}
               </a>
             </li>
           ))
         }
-      </div>
-      <li>
-        <a
-          href="/documents/resume.pdf"
-          download="diego_rascon_resume.pdf"
-          class="hidden invisible md:flex gap-2 opacity-0 rounded-full navbar-edge focusable-item"
-        >
-          <Icon name="download" class="text-xl" />
-          <span>Resume</span>
-        </a>
-      </li>
-    </ol>
+      </ol>
+      <a
+        href="/documents/resume.pdf"
+        download="diego_rascon_resume.pdf"
+        class="hidden invisible md:flex gap-2 opacity-0 rounded-full hover:text-sky-300 navbar-edge focusable-item"
+      >
+        <Icon name="download" class="text-xl" />
+        <span>Resume</span>
+      </a>
+    </div>
   </nav>
 </header>
 
