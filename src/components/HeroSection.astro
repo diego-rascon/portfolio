@@ -5,7 +5,7 @@ import Section from "./Section.astro";
 
 <Section>
   <div
-    class="flex md:flex-row flex-col-reverse gap-8 md:gap-16 mx-4 mt-24 md:mt-64 md:mb-32"
+    class="flex md:flex-row flex-col-reverse md:items-center gap-8 md:gap-16 mx-4 mt-24 md:mt-64 md:mb-32"
   >
     <div class="flex flex-col items-start">
       <h1 class="mb-8 font-bold text-slate-200 text-5xl scroll-mt-96" id="home">
@@ -26,7 +26,8 @@ import Section from "./Section.astro";
       </a>
     </div>
     <img
-      src="/images/profile-picture.jpg"
+      fetchpriority="high"
+      src="/images/profile-picture.webp"
       alt="Diego Rascón"
       class="self-center shadow-xl border-slate-400 border-t rounded-2xl size-48 md:size-72 object-cover"
     />
