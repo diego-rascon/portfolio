@@ -13,16 +13,18 @@ const {
 } = Astro.props;
 ---
 
-<GlassContainer>
-  <li class="group flex md:flex-row flex-col md:items-center gap-4">
-    <div
-      class="flex md:flex-1 justify-center items-center bg-slate-200 md:brightness-90 group-hover:brightness-100 md:saturate-0 group-hover:saturate-100 border-2 border-slate-600 rounded-xl w-full md:w-48 h-24 transition-all item-center"
-    >
-      <Icon name={icon} class="text-4xl" />
+<li>
+  <GlassContainer>
+    <div class="group flex md:flex-row flex-col md:items-center gap-4">
+      <div
+        class="flex md:flex-1 justify-center items-center bg-slate-200 md:brightness-90 group-hover:brightness-100 md:saturate-0 group-hover:saturate-100 border-2 border-slate-600 rounded-xl w-full md:w-48 h-24 transition-all item-center"
+      >
+        <Icon name={icon} class="text-4xl" />
+      </div>
+      <div class="flex flex-col md:flex-3 items-start px-3 md:px-0">
+        <StyledLink url={url}>{title}</StyledLink>
+        <p class="font-light text-slate-400">{description}</p>
+      </div>
     </div>
-    <div class="flex flex-col md:flex-3 items-start px-3 md:px-0">
-      <StyledLink url={url}>{title}</StyledLink>
-      <p class="font-light text-slate-400">{description}</p>
-    </div>
-  </li>
-</GlassContainer>
+  </GlassContainer>
+</li>
