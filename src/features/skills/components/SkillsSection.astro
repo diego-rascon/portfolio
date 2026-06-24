@@ -1,0 +1,38 @@
+---
+import { Subtitle, Section } from "@/components/index";
+import {
+  SkillCategoryContainer,
+  backendList,
+  frontendList,
+  languagesList,
+  toolsList,
+} from "@/features/skills/index";
+---
+
+<Section>
+  <Subtitle id="skills" icon="brain">Skills</Subtitle>
+  <div class="gap-4 grid md:grid-cols-2 px-4">
+    <SkillCategoryContainer
+      className="md:col-span-2"
+      title="Languages"
+      icon="code"
+      technologies={languagesList}
+    />
+    <SkillCategoryContainer
+      title="Front-end"
+      icon="layout"
+      technologies={frontendList}
+    />
+    <SkillCategoryContainer
+      title="Back-end"
+      icon="server"
+      technologies={backendList}
+    />
+    <SkillCategoryContainer
+      className="md:col-span-2"
+      title="Tools & Infrastructure"
+      icon="infrastructure"
+      technologies={toolsList}
+    />
+  </div>
+</Section>

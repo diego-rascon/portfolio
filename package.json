@@ -15,6 +15,7 @@
     "format:fix": "prettier --write ."
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.9",
     "@astrojs/cloudflare": "^14.0.0",
     "@astrojs/svelte": "^9.0.0",
     "@tailwindcss/vite": "^4.3.1",

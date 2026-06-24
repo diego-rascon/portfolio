@@ -1,0 +1,14 @@
+---
+import {
+  certificationsList,
+  CertificationItem,
+} from "@/features/certifications/index";
+---
+
+<ol class="flex flex-col gap-2">
+  {
+    certificationsList.map((certificationItem) => (
+      <CertificationItem certificationItem={certificationItem} />
+    ))
+  }
+</ol>
