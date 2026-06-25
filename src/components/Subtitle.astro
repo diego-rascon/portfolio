@@ -2,11 +2,10 @@
 import type { SvgComponent } from "astro/types";
 
 interface Props {
-  id: string;
   Icon: SvgComponent;
 }
 
-const { id, Icon } = Astro.props;
+const { Icon } = Astro.props;
 ---
 
 <div class="flex items-center gap-3 mb-8 px-4">
@@ -15,10 +14,7 @@ const { id, Icon } = Astro.props;
   >
     <Icon class="size-5 text-sky-300" />
   </div>
-  <h2
-    id={id}
-    class="font-semibold text-slate-200 text-2xl tracking-wide scroll-mt-24"
-  >
+  <h2 class="font-semibold text-slate-200 text-2xl tracking-wide">
     <slot />
   </h2>
 </div>
