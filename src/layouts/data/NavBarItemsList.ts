@@ -1,6 +1,6 @@
 import type { NavBarItem } from "@/layouts/types/NavItem";
 
-export const navBarItems: NavBarItem[] = [
+export const navBarItemsList: NavBarItem[] = [
   {
     id: "experience",
     label: "Experience",
