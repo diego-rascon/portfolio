@@ -7,31 +7,21 @@
   }
 
   let { isScrolled }: Props = $props();
-
   let activeId = $state<string | null>(null);
 
   onMount(() => {
-    const sections = navBarItemsList
-      .map(({ id }) => document.getElementById(id))
-      .filter((el): el is HTMLElement => el !== null);
-
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-
-        if (visible[0]) {
-          activeId = visible[0].target.id;
-        }
+        const visible = entries.find((e) => e.isIntersecting);
+        if (visible) activeId = visible.target.id;
       },
-      {
-        rootMargin: "-40% 0px -40% 0px",
-        threshold: 0,
-      }
+      { rootMargin: "-40% 0px -40% 0px" }
     );
 
-    sections.forEach((el) => observer.observe(el));
+    navBarItemsList.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
 
     return () => observer.disconnect();
   });
