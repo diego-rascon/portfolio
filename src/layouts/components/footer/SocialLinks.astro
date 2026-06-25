@@ -1,18 +1,17 @@
 ---
 import { socialLinksList } from "@/layouts/data/SocialLinksList";
-import { Icon } from "astro-icon/components";
 ---
 
 <div class="flex justify-end gap-6">
   {
-    socialLinksList.map(({ url, icon, label }) => (
+    socialLinksList.map(({ url, Icon, label }) => (
       <a
         class="rounded-md text-slate-400 hover:text-sky-300 transition-colors focusable-item"
         href={url}
         target="_blank"
         aria-label={label}
       >
-        <Icon name={icon} class="size-6" />
+        <Icon class="size-6" />
       </a>
     ))
   }

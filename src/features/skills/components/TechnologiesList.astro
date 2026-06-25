@@ -1,6 +1,5 @@
 ---
 import type { Technology } from "@/features/skills/types/Technology";
-import { Icon } from "astro-icon/components";
 
 interface Props {
   technologies: Technology[];
@@ -13,9 +12,9 @@ const { technologies } = Astro.props;
   class="flex flex-wrap justify-evenly items-center gap-4 w-full transition-all"
 >
   {
-    technologies.map(({ name, icon }) => (
+    technologies.map(({ name, Icon }) => (
       <li class="flex flex-col flex-1 justify-center items-center gap-4">
-        <Icon name={icon} class="size-8 md:size-10" />
+        <Icon class="size-8 md:size-10" />
         <p class="font-light text-slate-400 text-sm md:text-base text-center truncate">
           {name}
         </p>

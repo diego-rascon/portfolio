@@ -1,21 +1,24 @@
 ---
-import { Icon } from "astro-icon/components";
+import type { SvgComponent } from "astro/types";
 
 interface Props {
   id: string;
-  icon: string;
+  Icon: SvgComponent;
 }
 
-const { id, icon } = Astro.props;
+const { id, Icon } = Astro.props;
 ---
 
 <div class="flex items-center gap-3 mb-8 px-4">
   <div
     class="flex justify-center items-center bg-slate-800 shadow border-slate-800 border-t rounded-full size-10"
   >
-    <Icon name={icon} class="size-5 text-sky-300" />
+    <Icon class="size-5 text-sky-300" />
   </div>
-  <h2 id={id} class="font-semibold text-slate-200 text-2xl tracking-wide scroll-mt-24">
+  <h2
+    id={id}
+    class="font-semibold text-slate-200 text-2xl tracking-wide scroll-mt-24"
+  >
     <slot />
   </h2>
 </div>

@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
+import SquareArrowOutUpRightIcon from "@/assets/icons/square-arrow-out-up-right.svg";
 
 interface Props {
   url: string;
@@ -14,8 +14,7 @@ const { url } = Astro.props;
   target="_blank"
 >
   <slot />
-  <Icon
-    name="square-arrow-out-up-right"
-    class="min-w-4 min-h-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
+  <SquareArrowOutUpRightIcon
+    class="size-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
   />
 </a>

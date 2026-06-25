@@ -1,6 +1,6 @@
 ---
+import DownloadIcon from "@/assets/icons/download.svg";
 import { navBarItems } from "@/layouts/data/NavBarItems";
-import { Icon } from "astro-icon/components";
 ---
 
 <header class="z-10 fixed px-4 w-full" role="banner">
@@ -31,7 +31,7 @@ import { Icon } from "astro-icon/components";
         download="diego_rascon_resume.pdf"
         class="hidden invisible md:flex gap-2 opacity-0 rounded-full hover:text-sky-300 navbar-edge focusable-item"
       >
-        <Icon name="download" class="text-xl" />
+        <DownloadIcon class="h-5" />
         <span>Resume</span>
       </a>
     </div>

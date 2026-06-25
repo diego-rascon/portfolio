@@ -1,20 +1,24 @@
+import JavaIcon from "@/features/skills/assets/icons/java.svg";
+import JavascriptIcon from "@/features/skills/assets/icons/javascript.svg";
+import PythonIcon from "@/features/skills/assets/icons/python.svg";
+import TypescriptIcon from "@/features/skills/assets/icons/typescript.svg";
 import type { Technology } from "@/features/skills/types/Technology";
 
 export const languagesList: Technology[] = [
   {
     name: "Java",
-    icon: "java",
+    Icon: JavaIcon,
   },
   {
     name: "JavaScript",
-    icon: "javascript",
+    Icon: JavascriptIcon,
   },
   {
     name: "TypeScript",
-    icon: "typescript",
+    Icon: TypescriptIcon,
   },
   {
     name: "Python",
-    icon: "python",
+    Icon: PythonIcon,
   },
 ];

@@ -1,5 +1,7 @@
+import type { SvgComponent } from "astro/types";
+
 export interface SocialLink {
-  icon: string;
+  Icon: SvgComponent;
   url: string;
   label: string;
 }

@@ -1,20 +1,24 @@
+import AwsIcon from "@/features/skills/assets/icons/aws.svg";
+import DockerIcon from "@/features/skills/assets/icons/docker.svg";
+import FigmaIcon from "@/features/skills/assets/icons/figma.svg";
+import GitIcon from "@/features/skills/assets/icons/git.svg";
 import type { Technology } from "@/features/skills/types/Technology";
 
 export const toolsList: Technology[] = [
   {
     name: "AWS",
-    icon: "aws",
+    Icon: AwsIcon,
   },
   {
     name: "Docker",
-    icon: "docker",
+    Icon: DockerIcon,
   },
   {
     name: "Git",
-    icon: "git",
+    Icon: GitIcon,
   },
   {
     name: "Figma",
-    icon: "figma",
+    Icon: FigmaIcon,
   },
 ];
