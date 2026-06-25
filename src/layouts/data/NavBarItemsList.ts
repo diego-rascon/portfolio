@@ -1,4 +1,4 @@
-import type { NavBarItem } from "@/layouts/types/NavItem";
+import type { NavBarItem } from "@/layouts/types/NavBarItem";
 
 export const navBarItemsList: NavBarItem[] = [
   {
