@@ -1,3 +1,11 @@
-<section class="mx-auto mb-16 p-4 max-w-4xl container">
+---
+interface Props {
+  id?: string;
+}
+
+const { id } = Astro.props;
+---
+
+<section id={id} class="mx-auto mb-16 p-4 max-w-4xl container scroll-mt-24">
   <slot />
 </section>
