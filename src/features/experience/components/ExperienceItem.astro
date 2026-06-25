@@ -1,7 +1,8 @@
 ---
+import { GlassContainer, StyledLink } from "@/components/index";
+import SkillsUsedList from "@/features/experience/components/SkillsUsedList.astro";
+import type { Experience } from "@/features/experience/types/Experience";
 import { formatDateRange } from "@/utils/index";
-import { type Experience, SkillsUsedList } from "@/features/experience/index";
-import { StyledLink, GlassContainer } from "@/components/index";
 
 interface Props {
   experienceItem: Experience;

@@ -1,16 +1,14 @@
 ---
-import { Subtitle, Section } from "@/components/index";
-import {
-  SkillCategoryContainer,
-  backendList,
-  frontendList,
-  languagesList,
-  toolsList,
-} from "@/features/skills/index";
+import { Section, Subtitle } from "@/components/index";
+import { backendList } from "@/features/skills/data/backendList";
+import { frontendList } from "@/features/skills/data/frontendList";
+import { languagesList } from "@/features/skills/data/languagesList";
+import { toolsList } from "@/features/skills/data/toolsList";
+import SkillCategoryContainer from "@/features/skills/components/SkillCategoryContainer.astro";
 ---
 
 <Section>
-  <Subtitle id="skills" icon="brain">Skills</Subtitle>
+  <Subtitle id="skills" icon="brain"> Skills </Subtitle>
   <div class="gap-4 grid md:grid-cols-2 px-4">
     <SkillCategoryContainer
       className="md:col-span-2"
@@ -35,4 +33,4 @@ import {
       technologies={toolsList}
     />
   </div>
-</Section>
+</Section>;

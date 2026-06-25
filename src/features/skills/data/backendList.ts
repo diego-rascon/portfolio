@@ -1,4 +1,4 @@
-import type { Technology } from "@/features/skills/index";
+import type { Technology } from "@/features/skills/types/Technology";
 
 export const backendList: Technology[] = [
   {

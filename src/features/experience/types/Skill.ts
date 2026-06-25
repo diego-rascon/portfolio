@@ -1,4 +1,4 @@
-import type { skillsList } from "@/features/experience/index";
+import type { skillsList } from "@/features/experience/data/skillsList";
 
 export interface Skill {
   name: string;

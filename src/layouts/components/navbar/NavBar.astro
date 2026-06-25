@@ -1,21 +1,6 @@
 ---
-import type { NavItem } from "@/layouts/index";
+import { navBarItems } from "@/layouts/data/NavBarItems";
 import { Icon } from "astro-icon/components";
-
-const navItems: NavItem[] = [
-  {
-    id: "experience",
-    label: "Experience",
-  },
-  {
-    id: "skills",
-    label: "Skills",
-  },
-  {
-    id: "certifications",
-    label: "Certifications",
-  },
-];
 ---
 
 <header class="z-10 fixed px-4 w-full" role="banner">
@@ -32,7 +17,7 @@ const navItems: NavItem[] = [
         class="flex gap-8 md:gap-16 text-sm md:text-base transition-all duration-300 navbar-link navbar-sections"
       >
         {
-          navItems.map(({ id, label }) => (
+          navBarItems.map(({ id, label }) => (
             <li>
               <a class="hover:text-sky-300 focusable-item" href={`#${id}`}>
                 {label}
@@ -54,7 +39,7 @@ const navItems: NavItem[] = [
 </header>
 
 <style>
-  @reference "../../styles/global.css";
+  @reference "../../../styles/global.css";
 
   @container page scroll-state(scrollable: top) {
     .navbar {

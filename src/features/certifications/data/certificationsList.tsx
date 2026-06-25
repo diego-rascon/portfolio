@@ -1,4 +1,4 @@
-import type { Certification } from "@/features/certifications/index";
+import type { Certification } from "@/features/certifications/types/Certification";
 
 export const certificationsList: Certification[] = [
   {

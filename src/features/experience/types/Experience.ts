@@ -1,4 +1,4 @@
-import type { SkillValue } from "@/features/experience/index";
+import type { SkillValue } from "@/features/experience/types/Skill";
 
 export interface Experience {
   company: string;
