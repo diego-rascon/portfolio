@@ -1,11 +1,17 @@
 ---
+import { Subtitle } from "@/components/index";
+import type { SvgComponent } from "astro/types";
+
 interface Props {
   id?: string;
+  title?: string;
+  Icon?: SvgComponent;
 }
 
-const { id } = Astro.props;
+const { id, title, Icon } = Astro.props;
 ---
 
 <section id={id} class="mx-auto mb-16 p-4 max-w-4xl container scroll-mt-24">
+  {title && Icon && <Subtitle Icon={Icon}>{title}</Subtitle>}
   <slot />
 </section>

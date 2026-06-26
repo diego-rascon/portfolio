@@ -1,5 +1,5 @@
 ---
-import { Section, Subtitle } from "@/components/index";
+import { Section } from "@/components/index";
 import BrainIcon from "@/features/skills/assets/icons/brain.svg";
 import CodeIcon from "@/features/skills/assets/icons/code.svg";
 import InfrastructureIcon from "@/features/skills/assets/icons/infrastructure.svg";
@@ -12,8 +12,7 @@ import { languagesList } from "@/features/skills/data/languagesList";
 import { toolsList } from "@/features/skills/data/toolsList";
 ---
 
-<Section id="skills">
-  <Subtitle Icon={BrainIcon}> Skills </Subtitle>
+<Section id="skills" title="Skills" Icon={BrainIcon}>
   <div class="gap-4 grid md:grid-cols-2 px-4">
     <SkillCategoryContainer
       className="md:col-span-2"
