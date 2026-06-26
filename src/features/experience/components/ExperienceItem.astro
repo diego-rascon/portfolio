@@ -1,6 +1,6 @@
 ---
 import { GlassContainer, StyledLink } from "@/components/index";
-import SkillsUsedList from "@/features/experience/components/SkillsUsedList.astro";
+import SkillsList from "@/features/experience/components/SkillsList.astro";
 import type { Experience } from "@/features/experience/types/Experience";
 import { formatDateRange } from "@/utils/index";
 
@@ -16,7 +16,7 @@ const {
     startDate,
     endDate,
     description,
-    skillsUsed,
+    skills,
   },
 } = Astro.props;
 
@@ -47,7 +47,7 @@ const formattedDateRange = formatDateRange(startDate, endDate);
         {formattedDateRange}
       </span>
       <p class="mb-2 font-light text-slate-400">{description}</p>
-      <SkillsUsedList skills={skillsUsed} />
+      <SkillsList skills={skills} />
     </GlassContainer>
   </div>
 </li>

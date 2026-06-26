@@ -1,4 +1,4 @@
-import type { SkillValue } from "@/types/Skill";
+import type { Skills } from "@/types/Skill";
 
 export interface Experience {
   company: string;
@@ -8,5 +8,5 @@ export interface Experience {
   startDate: Date;
   endDate: Date;
   description: string;
-  skillsUsed: SkillValue[];
+  skills: Skills[];
 }

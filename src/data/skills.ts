@@ -1,6 +1,6 @@
 import type { Skill } from "@/types/Skill";
 
-export const skillsList = {
+export const skills = {
   docker: {
     name: "Docker",
     backgroundColor: "bg-blue-950",

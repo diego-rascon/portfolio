@@ -1,4 +1,4 @@
-import type { skillsList } from "@/data/skillsList";
+import type { skills } from "@/data/skills";
 
 export interface Skill {
   name: string;
@@ -6,4 +6,4 @@ export interface Skill {
   textColor: string;
 }
 
-export type SkillValue = (typeof skillsList)[keyof typeof skillsList];
+export type Skills = (typeof skills)[keyof typeof skills];
