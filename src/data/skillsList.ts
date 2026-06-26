@@ -1,4 +1,4 @@
-import type { Skill } from "@/features/experience/types/Skill";
+import type { Skill } from "@/types/Skill";
 
 export const skillsList = {
   docker: {

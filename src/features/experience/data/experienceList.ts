@@ -1,4 +1,4 @@
-import { skillsList } from "@/features/experience/data/skillsList";
+import { skillsList } from "@/data/skillsList";
 import type { Experience } from "@/features/experience/types/Experience";
 
 export const experienceList: Experience[] = [
