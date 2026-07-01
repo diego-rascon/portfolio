@@ -1,0 +1,26 @@
+---
+import { GlassContainer } from "@/components/index";
+
+interface Props {
+  image: string;
+  alt: string;
+}
+
+const { image, alt } = Astro.props;
+---
+
+<li>
+  <GlassContainer>
+    <div class="group flex md:flex-row flex-col gap-4">
+      <img
+        fetchpriority="high"
+        src={image}
+        alt={alt}
+        class="h-48 md:h-28 w-full md:max-w-48 md:brightness-90 group-hover:brightness-100 md:saturate-50 group-hover:saturate-100 object-cover border border-slate-600 rounded-lg transition-all"
+      />
+      <div class="flex flex-col justify-center gap-2 px-3 md:px-0">
+        <slot />
+      </div>
+    </div>
+  </GlassContainer>
+</li>
