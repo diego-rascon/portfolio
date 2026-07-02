@@ -1,3 +1,3 @@
 export function resolveImagePath(fileName: string) {
-  return `/images/projects/${fileName}.webp`;
+  return `/images/certifications/${fileName}.webp`;
 }
