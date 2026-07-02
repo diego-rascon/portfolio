@@ -1,6 +1,11 @@
 import type { Skill } from "@/types/Skill";
 
 export const skills = {
+  aws: {
+    name: "AWS",
+    backgroundColor: "bg-amber-950",
+    textColor: "text-amber-300",
+  },
   docker: {
     name: "Docker",
     backgroundColor: "bg-blue-950",
@@ -10,6 +15,11 @@ export const skills = {
     name: "Elixir",
     backgroundColor: "bg-violet-950",
     textColor: "text-violet-300",
+  },
+  jQuery: {
+    name: "jQuery",
+    backgroundColor: "bg-blue-950",
+    textColor: "text-blue-300",
   },
   jwt: {
     name: "JWT",
@@ -31,6 +41,16 @@ export const skills = {
     backgroundColor: "bg-red-950",
     textColor: "text-red-300",
   },
+  php: {
+    name: "PHP",
+    backgroundColor: "bg-sky-950",
+    textColor: "text-sky-300",
+  },
+  postgresql: {
+    name: "PostgreSQL",
+    backgroundColor: "bg-sky-950",
+    textColor: "text-sky-300",
+  },
   python: {
     name: "Python",
     backgroundColor: "bg-yellow-950",
@@ -46,9 +66,39 @@ export const skills = {
     backgroundColor: "bg-orange-950",
     textColor: "text-orange-300",
   },
+  shadcn: {
+    name: "Shadcn",
+    backgroundColor: "bg-mist-800",
+    textColor: "text-mist-300",
+  },
   spring: {
     name: "Spring Boot",
     backgroundColor: "bg-green-950",
     textColor: "text-green-300",
+  },
+  sqlServer: {
+    name: "SQL Server",
+    backgroundColor: "bg-red-950",
+    textColor: "text-red-300",
+  },
+  supabase: {
+    name: "Supabase",
+    backgroundColor: "bg-emerald-950",
+    textColor: "text-emerald-300",
+  },
+  svelte: {
+    name: "Svelte",
+    backgroundColor: "bg-red-950",
+    textColor: "text-red-300",
+  },
+  tailwindcss: {
+    name: "Tailwind CSS",
+    backgroundColor: "bg-blue-950",
+    textColor: "text-blue-300",
+  },
+  tauri: {
+    name: "Tauri",
+    backgroundColor: "bg-yellow-950",
+    textColor: "text-yellow-300",
   },
 } satisfies Record<string, Skill>;
