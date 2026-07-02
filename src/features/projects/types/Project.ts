@@ -5,6 +5,7 @@ export interface Project {
   createdAt?: string;
   description: string;
   year: number;
-  url?: string;
-  skills?: Skills[];
+  url: string;
+  image: string;
+  skills: Skills[];
 }
