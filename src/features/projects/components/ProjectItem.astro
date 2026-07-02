@@ -1,0 +1,23 @@
+---
+import { ListItem, StyledLink, SkillsList } from "@/components/index";
+import { resolveImagePath } from "@/features/certifications/utils/resolveImagePath";
+import type { Project } from "@/features/projects/types/Project";
+
+interface Props {
+  projectItem: Project;
+}
+
+const {
+  projectItem: { title, createdAt, description, url, image, skills },
+} = Astro.props;
+---
+
+<ListItem image={resolveImagePath(image)} alt={title}>
+  <div class="flex items-center gap-3 text-slate-200">
+    <StyledLink url={url}>{title}</StyledLink>
+    <span class="text-slate-700">•</span>
+    <span>{createdAt}</span>
+  </div>
+  <p class="font-light text-slate-400">{description}</p>
+  <SkillsList skills={skills} />
+</ListItem>
