@@ -13,6 +13,8 @@ const {
 ---
 
 <ListItem image={resolveImagePath(image)} alt={alt}>
-  <StyledLink url={url}>{title}</StyledLink>
+  <div class="flex items-center">
+    <StyledLink url={url}>{title}</StyledLink>
+  </div>
   <p class="font-light text-slate-400">{description}</p>
 </ListItem>
