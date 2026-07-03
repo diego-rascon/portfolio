@@ -30,7 +30,7 @@
 <ol
   class={[
     "flex text-sm md:text-base transition-all duration-300 navbar-link",
-    isScrolled ? "gap-4 md:gap-8" : "gap-8 md:gap-16",
+    isScrolled ? "gap-4 md:gap-8" : "gap-4 md:gap-16",
   ]}
 >
   {#each navBarItemsList as {id, label}}
