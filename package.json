@@ -28,6 +28,7 @@
   "devDependencies": {
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^4.1.1",
     "wrangler": "^4.120.1"
   },
   "overrides": {
