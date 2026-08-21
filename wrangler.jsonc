@@ -5,15 +5,9 @@
   "main": "@astrojs/cloudflare/entrypoints/server",
   "assets": {
     "directory": "./dist",
-    "binding": "ASSETS",
+    "binding": "ASSETS"
   },
   "observability": {
-    "enabled": true,
-  },
-  "kv_namespaces": [
-    {
-      "binding": "SESSION",
-      "id": "7e5387b9b4a7413bbea9fceb89c93056",
-    },
-  ],
+    "enabled": true
+  }
 }
