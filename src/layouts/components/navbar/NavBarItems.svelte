@@ -1,6 +1,6 @@
 <script lang="ts">
   import { navBarItemsList } from "@/layouts/data/NavBarItemsList";
-    import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
   interface Props {
     isScrolled: boolean;
@@ -15,7 +15,7 @@
         const visible = entries.find((e) => e.isIntersecting);
         if (visible) activeId = visible.target.id;
       },
-      { rootMargin: "-40% 0px -40% 0px" }
+      { rootMargin: "-40% 0px -40% 0px" },
     );
 
     navBarItemsList.forEach(({ id }) => {
@@ -33,9 +33,14 @@
     isScrolled ? "gap-4 md:gap-8" : "gap-4 md:gap-16",
   ]}
 >
-  {#each navBarItemsList as {id, label}}
+  {#each navBarItemsList as { id, label }}
     <li>
-      <a class={isScrolled && activeId === id ? "pb-1 border-b-2 text-sky-300" : ""} href={`#${id}`}>
+      <a
+        class={isScrolled && activeId === id
+          ? "pb-1 border-b-2 text-sky-300"
+          : ""}
+        href={`#${id}`}
+      >
         {label}
       </a>
     </li>

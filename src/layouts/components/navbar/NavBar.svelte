@@ -8,7 +8,7 @@
   let isScrolled = $derived(scrollY > 0);
 </script>
 
-<svelte:window bind:scrollY/>
+<svelte:window bind:scrollY />
 
 <NavBarContainer {isScrolled}>
   <NavBarTitle {isScrolled} />
