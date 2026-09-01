@@ -1,40 +1,16 @@
 ---
 import { Section } from "@/components/index";
 import BrainIcon from "@/features/skills/assets/icons/brain.svg";
-import CodeIcon from "@/features/skills/assets/icons/code.svg";
-import InfrastructureIcon from "@/features/skills/assets/icons/infrastructure.svg";
-import LayoutIcon from "@/features/skills/assets/icons/layout.svg";
-import ServerIcon from "@/features/skills/assets/icons/server.svg";
 import SkillCategoryContainer from "@/features/skills/components/SkillCategoryContainer.astro";
-import { backendList } from "@/features/skills/data/backendList";
-import { frontendList } from "@/features/skills/data/frontendList";
-import { languagesList } from "@/features/skills/data/languagesList";
-import { toolsList } from "@/features/skills/data/toolsList";
+import { skillCategories } from "@/features/skills/data/skillCategories";
 ---
 
 <Section id="skills" title="Skills" Icon={BrainIcon}>
   <div class="gap-4 grid md:grid-cols-2 px-4">
-    <SkillCategoryContainer
-      className="md:col-span-2"
-      title="Languages"
-      Icon={CodeIcon}
-      technologies={languagesList}
-    />
-    <SkillCategoryContainer
-      title="Front-end"
-      Icon={LayoutIcon}
-      technologies={frontendList}
-    />
-    <SkillCategoryContainer
-      title="Back-end"
-      Icon={ServerIcon}
-      technologies={backendList}
-    />
-    <SkillCategoryContainer
-      className="md:col-span-2"
-      title="Tools & Infrastructure"
-      Icon={InfrastructureIcon}
-      technologies={toolsList}
-    />
+    {
+      skillCategories.map((category) => (
+        <SkillCategoryContainer {...category} />
+      ))
+    }
   </div>
-</Section>;
+</Section>
