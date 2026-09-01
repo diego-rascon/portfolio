@@ -7,20 +7,28 @@ interface Props {
   title: string;
   Icon: SvgComponent;
   technologies: Technology[];
+  description?: string;
   className?: string;
 }
 
-const { title, Icon, technologies, className } = Astro.props;
+const { title, Icon, technologies, description, className = "" } = Astro.props;
 ---
 
 <div
-  class=`group flex flex-col items-center justify-center bg-slate-800/40 p-4 py-8 hover:bg-slate-800/60 shadow hover:shadow-md backdrop-blur-xs border-slate-800 hover:border-slate-700 border-t rounded-2xl transition-all ${className}`
+  class=`group flex flex-col items-center justify-center bg-slate-800/40 p-4 py-8 hover:bg-slate-800/60 shadow hover:shadow-md backdrop-blur-xs border-slate-800 hover:border-slate-700 border rounded-2xl transition-all ${className}`
 >
   <div
-    class="flex items-center gap-3 mb-8 text-slate-300 group-hover:text-sky-300"
+    class="flex items-center gap-3 mb-4 text-slate-300 group-hover:text-sky-300"
   >
     <Icon class="size-5" />
     <h3 class="font-semibold text-lg">{title}</h3>
   </div>
+  {
+    description && (
+      <p class="mb-8 font-light text-slate-400 text-sm md:text-base text-center max-w-md">
+        {description}
+      </p>
+    )
+  }
   <TechnologiesList technologies={technologies} />
 </div>
