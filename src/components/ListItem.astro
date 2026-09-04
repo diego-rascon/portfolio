@@ -1,5 +1,5 @@
 ---
-import { GlassContainer } from "@/components/index";
+import GlassContainer from "@/components/GlassContainer.astro";
 
 interface Props {
   image: string;
@@ -13,7 +13,8 @@ const { image, alt } = Astro.props;
   <GlassContainer>
     <div class="group flex md:flex-row flex-col gap-4">
       <img
-        fetchpriority="high"
+        loading="lazy"
+        decoding="async"
         src={image}
         alt={alt}
         class="h-56 md:h-36 w-full md:max-w-56 object-cover border border-slate-600 rounded-lg transition-all"
