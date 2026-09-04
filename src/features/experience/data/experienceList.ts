@@ -5,7 +5,6 @@ export const experienceList: Experience[] = [
   {
     company: "Paystand",
     companyUrl: "https://www.paystand.com",
-    location: "Hermosillo, Son.",
     title: "Jr. Full-stack Engineer",
     startDate: new Date(2025, 4),
     endDate: new Date(2026, 3),
@@ -32,7 +31,7 @@ export const experienceList: Experience[] = [
       skills.reactNative,
       skills.nextjs,
       skills.spring,
-      skills.oracleDatabse,
+      skills.oracleDatabase,
     ],
   },
-] as const;
+];

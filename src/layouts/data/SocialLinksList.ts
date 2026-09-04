@@ -19,4 +19,4 @@ export const socialLinksList: SocialLink[] = [
     url: "https://github.com/diego-rascon",
     label: "My GitHub page...",
   },
-] as const;
+];
