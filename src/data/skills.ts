@@ -21,11 +21,6 @@ export const skills = {
     backgroundColor: "bg-blue-950",
     textColor: "text-blue-300",
   },
-  jwt: {
-    name: "JWT",
-    backgroundColor: "bg-fuchsia-950",
-    textColor: "text-fuchsia-300",
-  },
   mysql: {
     name: "MySQL",
     backgroundColor: "bg-sky-950",
@@ -36,7 +31,7 @@ export const skills = {
     backgroundColor: "bg-slate-950",
     textColor: "text-slate-300",
   },
-  oracleDatabse: {
+  oracleDatabase: {
     name: "Oracle Database",
     backgroundColor: "bg-red-950",
     textColor: "text-red-300",
