@@ -1,5 +1,6 @@
 <script lang="ts">
   import Icon from "@/components/Icon.svelte";
+  import { resumeFilename, resumeUrl } from "@/data/resume";
 
   interface Props {
     isScrolled: boolean;
@@ -9,8 +10,8 @@
 </script>
 
 <a
-  href="/documents/resume.pdf"
-  download="diego_rascon_resume.pdf"
+  href={resumeUrl}
+  download={resumeFilename}
   class={[
     "hidden invisible md:flex gap-2 opacity-0 rounded-full hover:text-sky-300 focusable-item",
     isScrolled && "visible opacity-100",

@@ -1,5 +1,6 @@
 ---
-import Section from "@/components/Section.astro";
+import { Section } from "@/components/index";
+import { resumeFilename, resumeUrl } from "@/data/resume";
 import DownloadIcon from "@/assets/icons/download.svg";
 ---
 
@@ -17,8 +18,8 @@ import DownloadIcon from "@/assets/icons/download.svg";
         high-performance server architectures.
       </p>
       <a
-        href="/documents/resume.pdf"
-        download="diego_rascon_resume.pdf"
+        href={resumeUrl}
+        download={resumeFilename}
         class="flex gap-4 bg-slate-800/40 hover:bg-slate-800/60 shadow hover:shadow-md backdrop-blur-xs px-6 py-4 border-slate-800 hover:border-slate-700 border-t rounded-2xl text-slate-300 hover:text-sky-300 transition-all focusable-item shrink"
       >
         <DownloadIcon class="h-5" />
