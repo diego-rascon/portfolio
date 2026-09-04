@@ -6,8 +6,7 @@ export const projectsList: Project[] = [
     title: "Network Portal",
     description:
       "A secure, multi-tenant B2B platform for enterprise clients to manage invoices, track transactions, and configure payment methods. Integrated with ERPs to automate workflows and cut manual processing times by 80%.",
-    createdAt: "Paystand",
-    year: 2025,
+    company: "Paystand",
     url: "https://company.paystand.app/en/signin",
     image: "network-portal",
     skills: [
@@ -24,8 +23,7 @@ export const projectsList: Project[] = [
     title: "Teacher Training System",
     description:
       "A full-stack training management platform built from scratch to automate professional development tracking for 300+ users. Features high-fidelity Figma prototypes and clean database schemas to streamline compliance.",
-    createdAt: "ITESCA",
-    year: 2025,
+    company: "ITESCA",
     url: "https://github.com/fungirox/capacitacion-docente",
     image: "itesca",
     skills: [skills.php, skills.jQuery, skills.sqlServer],
@@ -34,18 +32,16 @@ export const projectsList: Project[] = [
     title: "Rivera Gas",
     description:
       "A B2C e-commerce platform for scheduling fuel deliveries and locating physical service stations. Includes a complete UI rewrite that improved mobile rendering performance by 120%.",
-    createdAt: "Zitheonsoft",
-    year: 2024,
+    company: "Zitheonsoft",
     url: "https://apps.apple.com/mx/app/rivera-gas-clientes/id6746421348",
     image: "rivera-gas",
-    skills: [skills.spring, skills.reactNative, skills.oracleDatabse],
+    skills: [skills.spring, skills.reactNative, skills.oracleDatabase],
   },
   {
     title: "Panther Games",
     description:
       "A modern desktop POS and inventory management system that replaced 100% manual tracking with instant digital lookups. Features an intuitive, multi-user interface with real-time data synchronization.",
-    createdAt: "ITESCA",
-    year: 2023,
+    company: "ITESCA",
     url: "https://github.com/diego-rascon/panther-games",
     image: "panther-games",
     skills: [
