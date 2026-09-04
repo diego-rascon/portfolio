@@ -3,11 +3,11 @@ import type { Certification } from "@/features/certifications/types/Certificatio
 export const certificationsList: Certification[] = [
   {
     url: "https://cert.efset.org/en/qjD8hQ",
-    title: "EF SET English Text",
+    title: "EF SET English Test",
     description:
       "The achieved level is 67/100 on the EF SET score scale and C1 Advanced according to the Common European Framework of Reference (CEFR).",
     image: "ef-set",
-    alt: "EF SET english certification.",
+    alt: "EF SET English certification.",
   },
   {
     url: "https://www.udemy.com/certificate/UC-7ddbdafd-38fa-4bbe-85b6-0eef1c147074/",
@@ -23,6 +23,6 @@ export const certificationsList: Certification[] = [
     description:
       "Use React Native and your React knowledge to build native iOS and Android Apps - incl. Push Notifications, Hooks, Redux.",
     image: "react-native",
-    alt: "React Native ccertifiation image.",
+    alt: "React Native certification image.",
   },
 ];

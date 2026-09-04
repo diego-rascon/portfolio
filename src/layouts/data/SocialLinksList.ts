@@ -7,7 +7,7 @@ export const socialLinksList: SocialLink[] = [
   {
     Icon: MailIcon,
     url: "mailto:contact@drascon.com",
-    label: "Send me and email...",
+    label: "Send me an email...",
   },
   {
     Icon: LinkedInIcon,
