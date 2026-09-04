@@ -1,7 +1,7 @@
 ---
 import { ListItem, StyledLink } from "@/components/index";
 import type { Certification } from "@/features/certifications/types/Certification";
-import { resolveImagePath } from "@/features/certifications/utils/resolveImagePath";
+import { resolveImagePath } from "@/utils/index";
 
 interface Props {
   certificationItem: Certification;
@@ -12,7 +12,7 @@ const {
 } = Astro.props;
 ---
 
-<ListItem image={resolveImagePath(image)} alt={alt}>
+<ListItem image={resolveImagePath("certifications", image)} alt={alt}>
   <div class="flex items-center">
     <StyledLink url={url}>{title}</StyledLink>
   </div>
