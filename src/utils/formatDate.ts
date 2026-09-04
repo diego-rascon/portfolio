@@ -1,5 +1,5 @@
 function formatDate(date: Date) {
-  return date.toLocaleString("default", { month: "long", year: "numeric" });
+  return date.toLocaleDateString("en-US", { month: "long", year: "numeric" });
 }
 
 export function formatDateRange(startDate: Date, endDate: Date) {
