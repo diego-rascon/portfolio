@@ -9,7 +9,7 @@
   let { children, isScrolled }: Props = $props();
 </script>
 
-<header class="z-10 fixed px-4 w-full">
+<header class="z-10 fixed inset-x-0 top-0 px-4 w-full">
   <nav
     class={[
       "flex justify-center md:justify-between mx-auto px-6 py-4 border-t rounded-full max-w-4xl font-semibold transition-all duration-300 navbar container",
