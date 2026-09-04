@@ -27,22 +27,24 @@
   });
 </script>
 
-<ol
+<ul
   class={[
-    "flex text-sm md:text-base transition-all duration-300 navbar-link",
+    "flex text-sm md:text-base transition-all duration-300",
     isScrolled ? "gap-4 md:gap-8" : "gap-4 md:gap-16",
   ]}
 >
   {#each navBarItemsList as { id, label }}
     <li>
       <a
-        class={isScrolled && activeId === id
-          ? "pb-1 border-b-2 text-sky-300"
-          : ""}
+        class={[
+          "focusable-item",
+          isScrolled && activeId === id ? "pb-1 border-b-2 text-sky-300" : "",
+        ]}
         href={`#${id}`}
+        aria-current={activeId === id ? "true" : undefined}
       >
         {label}
       </a>
     </li>
   {/each}
-</ol>
+</ul>
