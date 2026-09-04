@@ -9,12 +9,10 @@
   }) as Record<string, string>;
 
   const svg = $derived(
-    className
-      ? (icons[`/src/assets/icons/${name}.svg`] ?? "").replace(
-          "<svg",
-          `<svg class="${className}"`,
-        )
-      : (icons[`/src/assets/icons/${name}.svg`] ?? ""),
+    (icons[`/src/assets/icons/${name}.svg`] ?? "").replace(
+      "<svg",
+      `<svg aria-hidden="true"${className ? ` class="${className}"` : ""}`,
+    ),
   );
 </script>
 

@@ -14,7 +14,7 @@ const { technologies } = Astro.props;
   {
     technologies.map(({ name, Icon }) => (
       <li class="flex flex-col flex-1 justify-center items-center gap-4">
-        <Icon class="size-8 md:size-10" />
+        <Icon class="size-8 md:size-10" aria-hidden="true" />
         <p class="font-light text-slate-400 text-sm md:text-base text-center truncate">
           {name}
         </p>
