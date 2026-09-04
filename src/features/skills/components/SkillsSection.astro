@@ -6,7 +6,7 @@ import { skillCategories } from "@/features/skills/data/skillCategories";
 ---
 
 <Section id="skills" title="Skills" Icon={BrainIcon}>
-  <div class="gap-4 grid md:grid-cols-2 px-4">
+  <div class="gap-4 grid md:grid-cols-2">
     {
       skillCategories.map((category) => (
         <SkillCategoryContainer {...category} />
