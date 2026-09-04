@@ -7,7 +7,7 @@ export const certificationsList: Certification[] = [
     description:
       "The achieved level is 67/100 on the EF SET score scale and C1 Advanced according to the Common European Framework of Reference (CEFR).",
     image: "ef-set",
-    alt: "EF SET English certification.",
+    alt: "EF SET English certification",
   },
   {
     url: "https://www.udemy.com/certificate/UC-7ddbdafd-38fa-4bbe-85b6-0eef1c147074/",
@@ -15,7 +15,7 @@ export const certificationsList: Certification[] = [
     description:
       "Build Full Stack web applications with React 18 (Frontend) and Spring Boot 3 (Backend) using RESTful APIs, JPA, JWT, Hooks, Redux, and AWS.",
     image: "react",
-    alt: "React certification image.",
+    alt: "React certification",
   },
   {
     url: "https://www.udemy.com/certificate/UC-3b46cb53-18b0-4cb6-92cf-64970295d47c/",
@@ -23,6 +23,6 @@ export const certificationsList: Certification[] = [
     description:
       "Use React Native and your React knowledge to build native iOS and Android Apps - incl. Push Notifications, Hooks, Redux.",
     image: "react-native",
-    alt: "React Native certification image.",
+    alt: "React Native certification",
   },
 ];
