@@ -33,8 +33,8 @@ export const skills = {
   },
   nextjs: {
     name: "Next.js",
-    backgroundColor: "bg-mist-800",
-    textColor: "text-mist-300",
+    backgroundColor: "bg-slate-950",
+    textColor: "text-slate-300",
   },
   oracleDatabse: {
     name: "Oracle Database",
@@ -68,8 +68,8 @@ export const skills = {
   },
   shadcn: {
     name: "Shadcn",
-    backgroundColor: "bg-mist-800",
-    textColor: "text-mist-300",
+    backgroundColor: "bg-slate-950",
+    textColor: "text-slate-300",
   },
   spring: {
     name: "Spring Boot",
